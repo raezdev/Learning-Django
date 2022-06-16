@@ -1,0 +1,43 @@
+
+PRE REQUISITOS
+---------------------------
+
+    1 - Tener instalado python
+    2 - Tener instlado pip
+
+
+
+INSTALACION
+----------------------------
+
+# Estos pasos instalaran la ultima version de django en todo el PC
+    Desde la consola de comandos ejecutar
+        pip install django
+
+# Lo normal es crear entornos virtuales para cada proyecto y asi tener las versiones correctas y sus dependencias.
+    Desde la consola de comandos ejecutar
+        pip install virtualenvwrapper-win
+
+# Creacion de un entorno virtual
+    Desde la consola de comandos ejecutar (no ejecutar desde PS ni desde VSC)
+        mkvirtualenv [nombre del entorno]
+        # mkvirtualenv myapp
+
+# Creacion de un proyecto con django
+    Desde la consola de comandos ejecutar
+        django-admin startproject [nombre del proyecto]
+        # django-admin startproject myproject
+        
+# Desactivar el entorno virtual
+    Desde la consola de comandos ejecutar (no ejecutar desde PS ni desde VSC)
+        deactivate
+
+# Activar un entorno virtual
+    Desde la consola de comandos ejecutar (no ejecutar desde PS ni desde VSC)
+        workon [nombre del entorno]
+        # workon myapp
+
+
+
+
+
