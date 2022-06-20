@@ -1,0 +1,21 @@
+
+# CREACION DE UNA NUEVA APP DENTRO DE UN PROYECTO django
+    Desde la consola de comandos ejecutar (no ejecutar desde PS ni desde VSC)
+    - Asegurarnos que tenemos el enviroment activo
+    - Posicionarnos en el directorio del proyecto
+    python manage.py startapp [nombre app]
+    # python manage.py startapp myapp
+    - Creara una nueva carpeta dentro del proyecto con nuevos ficheros de configuracion.
+
+
+# EJECUTAR UN SERVIDOR LOCAL CON EL PROTECTO django
+    Desde la consola de comandos ejecutar (no ejecutar desde PS ni desde VSC)
+    - Asegurarnos que tenemos el enviroment activo
+    - Posicionarnos en el directorio del proyecto
+    python manage.py runserver
+
+
+# INCLUIR UNA APP EN EL PROYECTO django
+    en el fichero urls.py del proyecto incluir esta linea
+        from django.urls import path, include
+        

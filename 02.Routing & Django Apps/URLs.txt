@@ -1,0 +1,4 @@
+
+- Dentro de la aplicaicon (myapp) crear un fichero para las URLs
+    urls.py
+
