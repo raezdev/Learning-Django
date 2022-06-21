@@ -1,0 +1,2 @@
+En este apartado veremos como enviar infromacion desde el backend (views.py) hacia el frontend (index.html)
+

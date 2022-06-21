@@ -1,0 +1,30 @@
+Django puede llamar a plantillas con codigo HTLM para mostrarlas como respuesta a las vistas 
+consusultar views.py
+
+
+Crearemos un nuevo directorio en la raiz del proyecto para las plantillas 
+    "templates"
+
+
+Para habilitar las plantillas debemos acceder al fichero setting.py y añadir la linea marcad con ==>
+    TEMPLATES = [
+        {
+            'BACKEND': 'django.template.backends.django.DjangoTemplates',
+=======>    'DIRS': [BASE_DIR, 'templates'],
+            'APP_DIRS': True,
+            'OPTIONS': {
+                'context_processors': [
+                    'django.template.context_processors.debug',
+                    'django.template.context_processors.request',
+                    'django.contrib.auth.context_processors.auth',
+                    'django.contrib.messages.context_processors.messages',
+                ],
+            },
+        },
+    ]
+
+
+Crear una nueva plantilla en el directorio templates "index.html"
+
+
+Renderizar la plantilla desde views.py
