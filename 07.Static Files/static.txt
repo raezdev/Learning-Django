@@ -1,0 +1,30 @@
+
+Almacenaremos todos los ficheros estaticos (CSS, imagenes, JS......) en un directorio static a la misma altuar que el de templates
+
+Para indicar a dajngo los ficheros y la carpeta static lo configuraremos en "settings.py" del proyecto
+    importaremos os --> import os
+    crearemos una nueva variable donde cargaremos el path
+        # Static files (CSS, JavaScript, Images)
+        # https://docs.djangoproject.com/en/4.0/howto/static-files/
+
+        STATIC_URL = 'static/'
+===>    SATATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+En los codigos HTML tendremos que cargar static y posterioprmente hacer referecnia a la direccion con dicho valor.
+
+===>    {% load static %}
+
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+        <title>OnePage Bootstrap Template - Index</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+
+        <!-- Favicons -->
+===>    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+===>    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
