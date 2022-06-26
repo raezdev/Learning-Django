@@ -2,7 +2,8 @@
 <br/><br/>
 
 <h2>Introduce tu texto</h2>
-<form method="" action="wordcounter">
+<form method="POST" action="wordcounter">
+    {% csrf_token %}
     <textarea name="texto" rows="20" cols="150"></textarea>
     <br/><br/>
     <input type="submit"/>

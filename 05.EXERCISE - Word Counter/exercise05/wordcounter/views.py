@@ -8,7 +8,8 @@ def index(request):
     return render(request, 'index.html')
 
 def wordcounter(request):
-    texto = request.GET.get('texto')
+    #texto = request.GET.get('texto')
+    texto = request.POST.get('texto')
     words = len(texto.split())
     
     context = {
